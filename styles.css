@@ -1,0 +1,67 @@
+* {
+	background-color: rgb(216, 210, 210);
+}
+.glow {
+	font-size: 80px;
+	color: rgb(250, 200, 200);
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4ad3f5, 0 0 40px #4ad3f5, 0 0 50px #4ad3f5,
+			0 0 60px #4ad3f5, 0 0 70px #4ad3f5;
+	}
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #4ad3f5, 0 0 40px #4ad3f5, 0 0 50px #4ad3f5, 0 0 60px #4ad3f5,
+			0 0 70px #4ad3f5, 0 0 80px #4ad3f5;
+	}
+}
+
+body input[type=button] {
+	background-color: #343a40;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	padding: 8px 16px;
+}
+.inputAll:hover {
+	background-image: linear-gradient(
+		to right,
+		#e7484f,
+		#e7484f 16.65%,
+		#f68b1d 16.65%,
+		#f68b1d 33.3%,
+		#fced00 33.3%,
+		#fced00 49.95%,
+		#009e4f 49.95%,
+		#009e4f 66.6%,
+		#00aac3 66.6%,
+		#00aac3 83.25%,
+		#732982 83.25%,
+		#732982 100%,
+		#e7484f 100%
+	);
+	animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+	to {
+		background-position: 20vw;
+	}
+}
+.inputBook {
+	background-color: #343a40;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	padding: 8px 16px;
+}
+
+.inputBook:hover {
+	color: rgb(58, 74, 88);
+	background-color: rgb(51, 163, 255);
+}

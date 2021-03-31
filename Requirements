@@ -1,0 +1,9 @@
+[x] List All Books (FINISHED WITH THE CONSOLE LOG) eventually not shown so we LIST ITEMS!
+[x] Add books and authors, pages, read completion 
+[x] Display list whenadded
+[] Should have remove button for each of the items like todo list
+[] Completion toggle on each items
+[] should clean each item into box for each
+[] Pop up form for adding books 
+[] Edit button function (optional)
+[] Backend server save adds each times

@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>My Small Library Collection</title>
+  
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<header class="glow">My Library</header>
+<body>
+    <script src="index.js"></script>
+    <div class= "container">
+        
+        <div class="inputContainer">
+            <input class="inputAll" type="button" onclick="displayBook()" value="List All Books"/><br>
+            <form name="form1" onsubmit="addBookToLibrary(event), this.reset()"> <!--what does this do? And this is not needed for addBookToLibrary???-->
+                <label for= "tBook">The Tile:</label> <br>
+                <input type = "Text" id="bookTitle" name="tBook" placeholder="Please Enter Title of Book." required> <br>
+                <label for= "aBook">The Author:</label> <br>
+                <input type = "Text" id="bookAuthor" name="aBook" placeholder="Please Enter Author of Book." required><br><br>
+                <label for= "pBook">Number of Pages:</label> <br>
+                <input type = "number" id="bookPage" name="pBook" placeholder="Please Enter The Number of Pages." required><br>
+
+                <input type = "checkbox" id="bookCompletion" name="cBook" checked='false' /><span>Completion</span><br>
+                <input class="inputBook" type="submit" value="Submit"/>
+            </form>
+            
+        </div><br>
+
+        <div class="listContainer">
+            <ul id="theList">
+
+            </ul>
+        </div>
+    </div>  
+</body>
+</html>
